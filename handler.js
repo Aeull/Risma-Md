@@ -30,14 +30,14 @@ module.exports = {
         global.namabot = conn.user.name
         global.packname = global.namabot
         global.author = global.data.owner
-        //global.author = '𝐉𝐚𝐫𝐨𝐭'
+        //global.author = 'Arull'
         global.wm2 = global.data.namabot + ' ' + global.data.owner
-        global.wm = '© 𝐀𝐥𝐩𝐢 𝐁𝐨𝐭'
+        global.wm = '© ArullBotz'
         global.colong1 = 'Ciss 📸'
-        global.colong2 = '𝐀𝐥𝐩𝐢 𝑩𝒐𝒕'
+        global.colong2 = 'ArullBotz'
         global.kontak2 = [
-        ['6285850539404', '𝐉𝐚𝐫𝐨𝐭', '𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑩𝒐𝒕', 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', true],
-        ['6285713137903', await this.getName('6285713137903@s.whatsapp.net'), '𝑷𝒂𝒓𝒕𝒏𝒆𝒓 𝐀𝐥𝐩𝐢 𝑩𝒐𝒕', 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', true], 
+        ['6285822347348', 'Arull', '𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑩𝒐𝒕', 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg', true],
+        ['6285822347348', await this.getName('6285822347348@s.whatsapp.net'), 'Arull', 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg', true], 
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
@@ -286,7 +286,7 @@ module.exports = {
                     if (!('antiBadword' in chat)) chat.antiBadword = true
                     if (!('antispam' in chat)) chat.antispam = true
                     if (!('antitroli' in chat)) chat.antitroli = false
-                    if (!('antivirtex' in chat)) chat.antivirtex = false
+                    if (!('antivirtex' in chat)) chat.antivirtex = true
                     if (!('viewonce' in chat)) chat.viewonce = true
                     if (!('nsfw' in chat)) chat.nsfw = false
                     if (!('simi' in chat)) chat.simi = false
@@ -312,7 +312,7 @@ module.exports = {
                     antiBadword: true,
                     antispam: true,
                     antitroli: false,
-                    antivirtex: false,
+                    antivirtex: true,
                     viewonce: true,
                     nsfw: false,
                     simi: false,
