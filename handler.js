@@ -37,7 +37,6 @@ module.exports = {
         global.colong2 = 'ArullBotz'
         global.kontak2 = [
         ['6285822347348', 'Arull', '𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑩𝒐𝒕', 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg', true],
-        ['6285822347348', await this.getName('6285822347348@s.whatsapp.net'), 'Arull', 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg', true], 
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
