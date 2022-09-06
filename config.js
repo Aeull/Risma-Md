@@ -36,7 +36,7 @@ global.wait = '_*𝒔𝒆𝒅𝒂𝒏𝒈 𝒅𝒊 𝒑𝒓𝒐𝒔𝒆𝒔...*_
 global.eror = '_*𝒎𝒂𝒂𝒇 𝒔𝒆𝒓𝒗𝒆𝒓 𝒆𝒓𝒓𝒐𝒓...*_'
 
 //========Url Template Buttons=========//
-global.dtu = '𝑌𝑜𝑢𝑡𝑢𝑏𝑒'
+global.dtu = 'ʏᴏᴜᴛᴜʙᴇ'
 global.urlnya = "https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg"
 
 //============= callButtons =============//
