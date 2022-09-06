@@ -1,20 +1,19 @@
 let handler  = async (m, { conn, usedPrefix }) => { 
 conn.reply(m.chat, `
-╭─˗ˏˋ *INFORMASI Alpi* ´ˎ˗
-│ ✎ _Nama_ : Alpi
-│ ✎ _Sekolah_ : SMA 1 BANTARBOLANG
-│ ✎ _Umur_ : 17
-│ ✎ _Asal_ : Jatim
-│ ✎ _Status_ : Pelajar SMA
-│ ✎ _WhatsApp_ :
-│    wa.me/6285713137903
+╭─˗ˏˋ *INFORMASI OWNER* ´ˎ˗
+│ ✎ _Nama_ : Shrull
+│ ✎ _Sekolah_ : Udah Lulus
+│ ✎ _Umur_ : 18
+│ ✎ _Asal_ : Kalsel
+│ ✎ _Status_ : Belum Menikah
+│ ✎ _WhatsApp_ :wa.me/6285822347348
 ╰──────────────
 `.trim(), m)
 }
 
-handler.help = ['infoalpi']
+handler.help = ['infoowner']
 handler.tags = ['main', 'utama']
-handler.command = /^(infoalpi)$/i
+handler.command = /^(infoowner)$/i
 
 handler.exp = 150
 
