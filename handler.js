@@ -630,19 +630,19 @@ module.exports = {
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                            let wel = API('hardianto', '/api/welcome3', {
+                            let wel = API('males', '/welcome2', {
                                 profile: pp,
-                                name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
-                                namegb: await this.getName(id),
-                                member: groupMetadata.participants.length
+                                username: await this.getName(user),
+                                background: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
+                                groupname: await this.getName(id),
+                                membercount: groupMetadata.participants.length
                             })
-                            let lea = API('hardianto', '/api/goodbye3', {
+                            let lea = API('males', '/goodbye2', {
                                 profile: pp,
-                                name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
-                                namegb: await this.getName(id),
-                                member: groupMetadata.participants.length
+                                username: await this.getName(user),
+                                background: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
+                                groupname: await this.getName(id),
+                                membercount: groupMetadata.participants.length
                             })
                             await this.send3TemplateButtonImg(id, action === 'add' ? wel : lea, text, wm, action === 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'FokusID')
                         }
